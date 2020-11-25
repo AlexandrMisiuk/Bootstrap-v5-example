@@ -1,0 +1,92 @@
+#heading .slider .slide, #heading .slider {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.main-color {
+  color: #3cb878;
+}
+
+.buy-now {
+  display: block;
+  line-height: 37px;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  text-transform: uppercase;
+  width: 119px;
+  height: 37px;
+  background-image: url("../Buton.png");
+  transition: all 0.2s ease-in-out 0.2s;
+}
+
+.buy-now:hover {
+  transform: scale(1.05);
+  color: #ffffff;
+}
+
+#top {
+  background-color: #000000;
+}
+#top div {
+  min-height: 60px;
+}
+#top .social {
+  width: 19%;
+  min-width: 245px;
+}
+#top .nav-link {
+  color: #ffffff;
+}
+#top .nav-link:hover, #top .active {
+  color: #e2e2e2;
+}
+
+#menu {
+  min-height: 100px;
+  text-transform: uppercase;
+}
+#menu .navbar-brand {
+  font-weight: 700;
+}
+#menu .nav-link, #menu .cart-link {
+  color: #000000;
+  font-weight: 700;
+}
+#menu .nav-link:hover, #menu .cart-link:hover, #menu .active {
+  color: #3cb878;
+}
+#menu .search-and-cart {
+  display: flex;
+  justify-content: flex-end;
+}
+#menu .search-and-cart .search-box input {
+  border: none;
+  border-bottom: black solid 2px;
+  outline: none;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+#menu .search-and-cart .search-box input:focus {
+  visibility: visible;
+}
+#menu .search-and-cart .search-box:hover input {
+  visibility: visible;
+}
+
+#heading {
+  height: 83.3333333333vh;
+  max-height: 800px;
+  background-color: #121212;
+  color: #333333;
+}
+#heading .slider .slide .content h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+}

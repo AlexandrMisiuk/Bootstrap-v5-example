@@ -1,0 +1,117 @@
+//fonts
+$main-font: "Poppins", sans-serif;
+
+// font colors
+$top-nav-color: #ffffff;
+$nav-link-hov-color: #e2e2e2;
+$main-color: #3cb878;
+$secondary-color: #333333;
+
+//bg colors
+$top-nav-bg: #000000;
+$main-bg: #121212;
+
+//size of boxes
+%full-height {
+    height: 100%;
+}
+
+body{
+    font-family: $main-font;
+}
+
+.main-color{
+    color: $main-color;
+}
+.buy-now{
+    display: block;
+    line-height: 37px;
+    font-family: $main-font;
+    color: $secondary-color;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    text-transform: uppercase;
+    width: 119px;
+    height: 37px;
+    background-image: url("../Buton.png");
+    transition: all 0.2s ease-in-out 0.2s;
+}
+.buy-now:hover{
+    transform: scale(1.05);
+    color: $top-nav-color;
+}
+
+#top{
+    background-color: $top-nav-bg;
+    div{
+        min-height: 60px;
+    }
+    .social{
+        width: 19%;
+        min-width: 245px;
+    }
+    .nav-link{
+        color: $top-nav-color;
+    }
+    .nav-link:hover, .active{
+        color: $nav-link-hov-color;
+    }
+}
+#menu{
+    min-height: 100px;
+    text-transform: uppercase;
+    .navbar-brand{
+        font-weight: 700;
+    }
+    .nav-link, .cart-link{
+        color: #000000;
+        font-weight: 700;
+    }
+    .nav-link:hover, .cart-link:hover, .active{
+        color: $main-color;
+    }
+    .search-and-cart{
+        display: flex;
+        justify-content: flex-end;
+        .search-box{
+            input{
+                border: none;
+                border-bottom: black solid 2px;
+                outline: none;
+                visibility: hidden;
+                transition: all 0.2s;
+            }
+            input:focus{
+                visibility: visible;
+            }
+        }
+        .search-box:hover{
+            input{
+                visibility: visible;
+            }
+        }
+    }
+}
+
+#heading{
+    height: (800px / 960px)*100vh;
+    max-height: 800px;
+    background-color: $main-bg;
+    color: $secondary-color;
+    .slider{
+        @extend %full-height;
+        .slide{
+            @extend %full-height;
+            .content{
+                h1{
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+  
